@@ -1,0 +1,144 @@
+###
+Data warehouse là một hệ thống lưu trữ dữ liệu được thiết kế để hỗ trợ cho quá trình ra quyết định trong doanh nghiệp bằng cách thu thập và lưu trữ dữ liệu từ nhiều nguồn khác nhau để phân tích và tạo ra các báo cáo cho các nhà quản lý và người dùng cuối.
+
+Ví dụ về một hệ thống data warehouse là của Amazon. Amazon lưu trữ dữ liệu khách hàng, thông tin sản phẩm, các giao dịch mua bán và các hoạt động khác trong hệ thống của họ. Các dữ liệu này được lưu trữ trong các kho dữ liệu khác nhau và được tổng hợp lại thành một hệ thống data warehouse chung để phục vụ cho việc phân tích và đưa ra quyết định.
+
+Một số công cụ phổ biến để xây dựng data warehouse bao gồm:
+
+    Oracle Data Warehouse: là một công cụ data warehouse phổ biến, được xây dựng trên nền tảng Oracle Database và cung cấp tính năng phân tích và báo cáo.
+
+    Microsoft SQL Server: là một hệ quản trị cơ sở dữ liệu phổ biến, cung cấp tính năng data warehouse để thu thập và phân tích dữ liệu.
+
+    Snowflake: là một nền tảng cloud data warehouse, được thiết kế để hỗ trợ cho các doanh nghiệp với các yêu cầu dữ liệu lớn và phức tạp.
+
+    Amazon Redshift: là một dịch vụ data warehouse cloud của Amazon Web Services (AWS), được thiết kế để hỗ trợ cho việc phân tích dữ liệu quy mô lớn.
+
+    Google BigQuery: là một dịch vụ data warehouse cloud của Google Cloud Platform, cung cấp tính năng phân tích dữ liệu với tốc độ và quy mô lớn.
+
+Các công cụ trên đều có tính năng và ưu điểm riêng, do đó, khi triển khai data warehouse, các doanh nghiệp cần lựa chọn công cụ phù hợp với yêu cầu và mục đích của mình.
+
+### 
+Data lake là một kho dữ liệu lưu trữ các nguồn dữ liệu khác nhau trong nhiều định dạng và kích thước khác nhau, bao gồm cả dữ liệu cấu trúc và phi cấu trúc, cho phép người dùng truy xuất, phân tích và xử lý dữ liệu một cách linh hoạt và hiệu quả.
+
+Ví dụ về data lake là Amazon S3 (Simple Storage Service) của Amazon Web Services, Microsoft Azure Data Lake của Microsoft, hay Google Cloud Storage của Google.
+
+Các công cụ khác để quản lý và truy xuất dữ liệu từ data lake bao gồm Apache Hadoop, Apache Spark, Apache Hive và Apache Pig. Các công cụ này cho phép người dùng truy xuất và xử lý dữ liệu trong data lake theo nhiều cách khác nhau.
+
+Để biến máy chủ của bạn thành một data lake, bạn cần thiết lập một hệ thống lưu trữ file phân tán có thể xử lý các khối lượng lớn dữ liệu có cấu trúc và phi cấu trúc. Dưới đây là các bước bạn có thể làm để tạo một data lake trên máy chủ của bạn:
+
+    Chọn hệ thống lưu trữ file phân tán: Một trong những hệ thống lưu trữ file phân tán phổ biến nhất để tạo data lake là Apache Hadoop Distributed File System (HDFS). Những lựa chọn khác bao gồm Amazon S3, Microsoft Azure Data Lake Storage và Google Cloud Storage.
+
+    Cài đặt và cấu hình hệ thống lưu trữ file phân tán: Sau khi bạn đã chọn hệ thống lưu trữ file phân tán, bạn sẽ cần cài đặt và cấu hình nó trên máy chủ của bạn. Thông thường, điều này bao gồm việc cài đặt phần mềm cần thiết và cấu hình hệ thống để hoạt động với phần cứng và mạng của bạn.
+
+    Kết nối các nguồn dữ liệu: Sau khi hệ thống lưu trữ file phân tán của bạn đã hoạt động, bạn sẽ cần kết nối nó với các nguồn dữ liệu của bạn. Điều này có thể bao gồm thiết lập các kết nối hoặc đường ống dữ liệu để lấy dữ liệu từ các nguồn khác nhau như cơ sở dữ liệu, kho dữ liệu và các hệ thống lưu trữ dữ liệu khác.
+
+    Lưu trữ dữ liệu của bạn trong data lake: Sau khi các nguồn dữ liệu của bạn được kết nối, bạn có thể bắt đầu lưu trữ dữ liệu của mình trong data lake. Bạn có thể muốn xem xét sử dụng một bộ sưu tập dữ liệu hoặc hệ thống quản lý siêu dữ liệu để giúp tổ chức và quản lý dữ liệu của mình.
+
+    Phân tích dữ liệu của bạn: Với data lake được thiết lập, bạn có thể bắt đầu sử dụng các công cụ như Apache Spark, Apache Hive và Apache Pig để phân tích dữ liệu của bạn và thu được các thông tin hữu ích.
+
+    Thực hiện các biện pháp an ninh và quản trị: Data lake có thể chứa dữ liệu nhạy cảm, do đó cần thiết triển khai các biện pháp an ninh và quản trị để bảo vệ dữ liệu khỏi truy cập trái phép và đảm bao tuân thủ các quy định như GDPR hoặc HIPAA.
+
+Tổng quan, việc tạo một data lake trên máy chủ của bạn có thể là một quá trình phức tạp, vì vậy trước khi bắt đầu, bạn nên có một hiểu biết rõ ràng về mục tiêu và yêu cầu của mình.
+
+###
+Đây là một ví dụ đơn giản về cách tạo một data warehouse trong SQL Server:
+
+CREATE TABLE [dbo].[Sales](
+[SaleID] [int] IDENTITY(1,1) NOT NULL,
+[ProductID] [int] NOT NULL,
+[SaleDate] [datetime] NOT NULL,
+[SaleAmount] [money] NOT NULL,
+CONSTRAINT [PK_Sales] PRIMARY KEY CLUSTERED
+(
+[SaleID] ASC
+)
+);
+
+CREATE TABLE [dbo].[Products](
+[ProductID] [int] IDENTITY(1,1) NOT NULL,
+[ProductName] varchar NOT NULL,
+CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED
+(
+[ProductID] ASC
+)
+);
+
+CREATE TABLE [dbo].[Customers](
+[CustomerID] [int] IDENTITY(1,1) NOT NULL,
+[CustomerName] varchar NOT NULL,
+CONSTRAINT [PK_Customers] PRIMARY KEY CLUSTERED
+(
+[CustomerID] ASC
+)
+);
+
+CREATE TABLE [dbo].[SalesFact](
+[SaleID] [int] NOT NULL,
+[ProductID] [int] NOT NULL,
+[CustomerID] [int] NOT NULL,
+[SaleDate] [datetime] NOT NULL,
+[SaleAmount] [money] NOT NULL,
+CONSTRAINT [PK_SalesFact] PRIMARY KEY CLUSTERED
+(
+[SaleID] ASC
+),
+CONSTRAINT [FK_SalesFact_Products] FOREIGN KEY([ProductID]) REFERENCES [dbo].[Products] ([ProductID]),
+CONSTRAINT [FK_SalesFact_Customers] FOREIGN KEY([CustomerID]) REFERENCES [dbo].[Customers] ([CustomerID]),
+CONSTRAINT [FK_SalesFact_Sales] FOREIGN KEY([SaleID]) REFERENCES [dbo].[Sales] ([SaleID])
+);
+
+Trong ví dụ này, ta đã tạo các bảng Sales, Products, Customers và SalesFact. Bảng Sales lưu trữ thông tin về các bán hàng, bảng Products lưu trữ thông tin về sản phẩm, bảng Customers lưu trữ thông tin về khách hàng, và bảng SalesFact lưu trữ các thông tin kết hợp của các bảng khác nhau để tạo ra một bảng dữ liệu đại diện cho các dữ liệu được tổng hợp từ các bảng khác. Các bảng này được kết nối với nhau thông qua các khóa ngoại để có thể thực hiện các truy vấn phức tạp và thu thập thông tin quan trọng từ các dữ liệu.
+
+###
+Bạn có thể sử dụng các công cụ ETL (Extract, Transform, Load) để chuyển đổi và đưa các báo cáo .xlsx và .csv vào data lake. Các công cụ ETL giúp bạn rút trích dữ liệu từ các nguồn khác nhau, sau đó biến đổi dữ liệu để phù hợp với cấu trúc dữ liệu của data lake và cuối cùng đưa dữ liệu vào data lake.
+
+Một số công cụ ETL phổ biến là Apache NiFi, Talend, AWS Glue, Google Cloud Dataflow, Microsoft Azure Data Factory, và nhiều công cụ khác. Mỗi công cụ có những tính năng và đặc điểm riêng, bạn nên chọn công cụ phù hợp với nhu cầu của bạn.
+
+Bạn cần chỉ định đường dẫn lưu trữ cho data lake, đảm bảo rằng data lake được truy cập và quản lý bảo mật một cách hiệu quả. Ngoài ra, bạn cần thiết lập luồng dữ liệu (data flow) để quản lý quá trình chuyển đổi dữ liệu của bạn từ nguồn đến data lake.
+
+Sau khi đã thiết lập các bước trên, bạn có thể chạy luồng dữ liệu để chuyển đổi và đưa các báo cáo .xlsx và .csv vào data lake.
+
+Dưới đây là một ví dụ về cách thiết lập luồng dữ liệu để chuyển đổi và đưa dữ liệu từ các tệp CSV vào data lake sử dụng Apache NiFi:
+
+    Tạo một "GetFile" processor để lấy dữ liệu từ các tệp CSV đầu vào. Thiết lập đường dẫn đến thư mục chứa các tệp CSV cần đưa vào data lake.
+
+    Tiếp theo, tạo một "SplitText" processor để tách các tệp CSV thành các dòng riêng lẻ.
+
+    Sử dụng một "EvaluateXPath" processor để tách các trường từ các dòng dữ liệu CSV.
+
+    Sử dụng một "ConvertRecord" processor để chuyển đổi dữ liệu từ định dạng CSV sang định dạng Parquet, một định dạng lưu trữ dữ liệu phổ biến cho data lake.
+
+    Cuối cùng, tạo một "PutHDFS" processor để đưa dữ liệu đã chuyển đổi vào data lake sử dụng HDFS.
+
+Với luồng dữ liệu này, bạn có thể tự động chuyển đổi và đưa các tệp CSV vào data lake một cách hiệu quả.
+
+###
+
+Data Pipeline using Python and MySQL:
+
+As a Data Engineer, I have extensive experience in designing, building and maintaining data pipelines using Python and MySQL. My expertise lies in developing ETL (Extract, Transform, Load) processes to ensure data integrity and consistency, while also automating the entire pipeline to ensure seamless data integration.
+
+In my previous role, I designed and developed a data pipeline using Python and MySQL that collected, processed and stored data from various sources such as APIs, web scraping, and file systems. This pipeline included various data transformations such as data cleaning, normalization, and aggregation.
+
+To ensure the pipeline runs efficiently, I implemented various optimizations such as batching and parallel processing, resulting in faster data processing times. I also ensured that the pipeline was fault-tolerant, handling errors and exceptions gracefully to ensure data integrity and consistency.
+
+Furthermore, I have experience in designing and implementing database schemas and optimizing queries for MySQL. This ensures that the data pipeline operates on optimized data storage and retrieval systems, improving its overall performance.
+
+Overall, my experience in data pipeline design and implementation using Python and MySQL has helped me develop a deep understanding of data integration, processing, and storage. I am confident in my ability to design and develop efficient and reliable data pipelines for any business use case.
+
+###
+Khi làm data pipeline chỉ sử dụng Python và MySQL và chạy pipeline sử dụng command line argparse, có một số việc cần làm để đảm bảo pipeline hoạt động hiệu quả:
+
+Thiết kế cấu trúc database: Thiết kế cấu trúc database phải đảm bảo tính tổng quát, mô hình hóa dữ liệu đúng cách và dễ dàng truy vấn.
+
+Thiết kế cấu trúc của data pipeline: Thiết kế cấu trúc của data pipeline bao gồm các phần tử trong pipeline, bao gồm các bước Extract, Transform và Load. Các phần tử này có thể được tạo ra dưới dạng các class trong Python.
+
+Viết script Python cho từng phần tử của pipeline: Viết script Python cho từng phần tử của pipeline, bao gồm các script cho phần tử Extract, Transform và Load.
+
+Sử dụng argparse để cấu hình pipeline: Sử dụng argparse để cấu hình pipeline và cho phép người dùng cấu hình các tham số đầu vào cho pipeline, chẳng hạn như đường dẫn đến các tệp dữ liệu.
+
+Đảm bảo tính toàn vẹn của dữ liệu: Đảm bảo tính toàn vẹn của dữ liệu bằng cách kiểm tra các lỗi và xử lý các trường hợp ngoại lệ, bao gồm cả các lỗi trong quá trình truy vấn và xử lý dữ liệu.
+
+Kiểm tra và tối ưu pipeline: Kiểm tra pipeline để đảm bảo rằng nó hoạt động đúng cách và tối ưu hóa pipeline để đảm bảo rằng nó hoạt động hiệu quả nhất có thể.
+
+Tóm lại, để làm data pipeline chỉ sử dụng Python và MySQL và chạy pipeline sử dụng command line argparse, bạn cần thiết kế cấu trúc của database và pipeline, viết script Python cho từng phần tử của pipeline, sử dụng argparse để cấu hình pipeline, đảm bảo tính toàn vẹn của dữ liệu, kiểm tra và tối ưu pipeline để đảm bảo rằng nó hoạt động hiệu quả.
